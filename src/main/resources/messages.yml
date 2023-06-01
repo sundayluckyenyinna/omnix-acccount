@@ -1,0 +1,77 @@
+######### Accion MfB Account Microservice Global Messages ############
+---
+appMessages:
+    user:
+        notexist: The request is from an unknown user {0}
+    airtime:
+        success: Your airtime purchase was successful
+        failed: Your airtime purchase failed
+        fallback: Unable to complete airtime purchase at this moment. Service will be back shortly - {0}
+    data:
+        success: Your data subscription was successful
+        failed: Your data subscription was failed
+        fallback: Unable to complete data purchase at this moment. Service will be back shortly - {0}
+    request:
+        processing: Your request is processing. Do not repeat without a check
+        hash:
+            failed: Bad request
+        sameid: A record with the Request ID {0} already exist
+        norole: You donot have permission to use this resource
+        posting:
+            restriction:
+                empty: You have not inputted any Posting Restriction
+    record:
+        product:
+            empty: Product list is empty.
+            noexist: No record found matching the product code {0}
+            exist: Customer already have account with the product code {0}
+        notfound: No account record found for the account number {0}
+        account:
+            empty: No record for customer accounts 
+    customer:
+        noexist: No customer record found using the customer or mobile number {0}
+        mobile:
+            mismatch: The customer number supplied {0} and the one from mobile number {1} lookup are not the same
+            name:
+                mismatch: The mobile number {0} belongs to a customer with a different name from name supplied
+    account:
+        noprimary: Unable determine debit account for the transaction. Ensure primary account is set for the customer
+        notexist: No record found for the account number {0}
+        numbering:
+            failed: Failed to generate account numbering for customer number {0}
+        opening:
+            failed: Failed to open account for customer number {0}
+        list:
+            notexist: The customer has no account(s) record(s)
+        iswallet: The account number {0} is a wallet and not supported for this transaction
+        statement:
+            email: Your request is processing. You will receive an email with the account statement
+            noentry: No entries for the period {0} to {1}   
+    posting:
+        restriction:
+            success: The following restriction(s) {0} have been applied to your account
+            failed: The following restriction(s) have been removed from your account
+            none: No current posting restriction to remove for account number {0}
+    fallback:
+        account: Unable to process your request at this moment. Service will be back shortly - {0}
+    error:
+        messages:
+            outofmem: Out of memory error occured
+            authfailed: Authentication failed
+            maxuser: Maximum T24 user reached
+            failedmessage: Failed to receive message
+            norecord: No record or entries found for the period
+            invlidcoy: Invalid company specified
+            failedhost: Failed to connect to host
+            nocheque: No cheque found
+            unreadable: The data is unreadable
+            inputman: A mandatory input not supplied
+            someerrors: Some errors were encountered during processing
+            override: Some override conditions have not been met
+            nopermission: No permission to access this data
+            noid: User has no ID
+            endoffile: Socket exception. Unexpected end of file
+            nocash: No cash is available
+            invalidaccount: Invalid account specified
+    branch:
+        noexist: No branch record exist with the branch code {0}

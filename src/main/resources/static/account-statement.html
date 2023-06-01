@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account statement</title>
+</head>
+<body style="font-size: 12px; width: 100%;">
+    <div id="page" class="page" style="width: 100%; background-image: url('C:/Users/seyinna/Documents/NetBeansProjects/Account/src/main/resources/static/account-statement2.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top;">
+
+        <div style="padding-top: 55mm; align-items: center">  
+            <div id="">
+                <h4 style="text-align: center"> AMFB STATEMENT OF ACCOUNT </h4>
+            </div>
+            <div>
+                <div style="float: left; width: 50%">
+                    <ul style="list-style: none">
+                        <li style="padding-top: 6px;"> Account Name: {accountName} </li>
+                        <li style="padding-top: 6px;"> Branch Name: {branchName} </li>
+                        <li style="padding-top: 6px;"> Account Type: {accountType} </li>
+                        <li style="padding-top: 6px;"> Print Date: {printDate} </li>
+                        <li style="padding-top: 6px;"> Customer Address: {customerAddress} </li>
+                    </ul>
+                </div>
+                <div style="float: right; width: 50%">
+                    <ul style="list-style: none">
+                        <li style="padding-top: 6px;"> Account Number: {accountNumber} </li>
+                        <li style="padding-top: 6px;"> Currency: {currency} </li>
+                        <li style="padding-top: 6px;"> Opening Balance: {openingBalance} </li>
+                        <li style="padding-top: 6px;"> Available Balance: {availableBalance} </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="clear:both">
+
+            </div>
+            <table style="width:100%; margin-top: 5px">
+                <thead>
+                   <tr>
+                       <th style="width: 10%"> Value Date </th>
+                       <th style="width: 50%"> Description </th>
+                       <th style="width: 10%"> Post Date </th>
+                       <th style="width: 10%"> Credit </th>
+                       <th style="width: 10%"> Debit </th>
+                       <th style="width: 10%"> Balance </th>
+                   </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
