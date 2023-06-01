@@ -30,7 +30,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Slf4j
-//@Service
+@Service
 public class CronJob {
 
     @Value("${omnix.version.account}")
